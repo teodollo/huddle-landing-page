@@ -14,17 +14,17 @@ body{
 }
 
 .logo{
-    transform: scale(0.5);
     position: relative;
-    left: -10%;
-    top: 8px;
+    max-width: 36%;
+    left: 8vw;
+    top: 3vh;
 }
 
 .mockup{
     max-width: 80%;
     left: 10.1%;
     position: relative;
-    top: 7vh;
+    top: 10.5vh;
 
 }
 
@@ -32,14 +32,14 @@ body{
 .main-text{
     text-align: center;
     position: relative;
-    top: 5em;
+    top: 15vh;
 }
 
 .main-text h1{
     font-family: 'Poppins', sans-serif;
     color: white;
     font-size: 25px;
-    max-width: 329px;
+    max-width: 87vw;
     margin-left: auto;
     margin-right: auto;
 }
@@ -47,7 +47,7 @@ body{
 .main-text p{
     font-family: 'Poppins', sans-serif;
     color: white;
-    max-width: 329px;
+    max-width: 87vw;
     margin-left: auto;
     margin-right: auto;
 }
@@ -76,17 +76,16 @@ body{
     display: grid;
     position: relative;
     max-width: 45%;
-    top: 7em;
+    top: 20vh;
     grid-template-columns: 1fr 1fr 1fr;
     margin-left: auto;
     margin-right: auto;
-    text-align:center;
 }
 
 .social{
   max-width: 20px;
   max-height: 20px;
-  margin-left: auto;
+  margin-left: 2vw;
   margin-right: auto;
   border: solid 2px;
   outline: none;
@@ -101,5 +100,68 @@ body{
   
 }
 
+@media screen and (min-width: 769px) {
+    *{
+        
+        max-height: 1024px;
+    }
+    body{
+        display: grid;
+        background-image: url("images/bg-desktop.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        grid-template-columns: 60% 40%;
+        grid-template-rows: auto auto;
+        min-height: 100vh;
+        max-height: 100vh;
+    
+    }
 
+    .logo{
+        grid-column: 1;
+        left: 3vw;
+    }
+    .mockup{
+        grid-column: 1;
+        grid-row: 2;
+        max-width: 94%;
+        left: 3.1%;
+        top: -23.5vh;
+    }
+
+    .main-text {
+        grid-column: 2;
+        text-align: left;
+    }
+
+    .main-text h1{
+        font-size: 32px;
+        max-width: 41vw;
+    }
+
+    .main-text p{
+        font-size: 17px;
+    }
+
+    .main-text button:hover{
+        background-color: hsl(300, 69%, 71%);
+        color: white;
+    }
+
+    .social{
+        grid-column: 2;
+        grid-row: 2;
+        max-height: 25px;
+        max-width: 25px;
+        min-height: 23px;
+        min-width: 23px;
+
+    }
+    .social:hover{
+        filter: invert(79%) sepia(71%) saturate(3135%) hue-rotate(233deg) brightness(97%) contrast(88%);
+    }
+    .footer{
+        top: 42vh;
+    }
+  }
 
