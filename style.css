@@ -68,7 +68,7 @@ body{
 
 .main-text button:active{
     background-color: hsl(300, 69%, 71%);
-    border: hsl(300, 69%, 71%);
+    border: solid hsl(300, 69%, 71%);
     color: white;
     cursor: pointer;
 }
@@ -143,7 +143,9 @@ body{
 
     .main-text button:hover{
         background-color: hsl(300, 69%, 71%);
+        border: solid hsl(300, 69%, 71%);
         color: white;
+        cursor: pointer;
     }
 
     .social{
@@ -157,6 +159,7 @@ body{
     }
     .social:hover{
         filter: invert(79%) sepia(71%) saturate(3135%) hue-rotate(233deg) brightness(97%) contrast(88%);
+        cursor: pointer;
     }
     .footer{
         top: 42vh;
