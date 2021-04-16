@@ -1,7 +1,8 @@
 *{
     border: solid hsl(257, 40%, 49%) 0px;
     max-width: 100%;
-    max-height: 812px;
+    max-height: 100vh;
+    
 }
 
 body{
@@ -101,10 +102,7 @@ body{
 }
 
 @media screen and (min-width: 769px) {
-    *{
-        
-        max-height: 1024px;
-    }
+  
     body{
         display: grid;
         background-image: url("images/bg-desktop.svg");
@@ -162,6 +160,8 @@ body{
     }
     .footer{
         top: 42vh;
+        max-height: 20px;
     }
+    
   }
 
