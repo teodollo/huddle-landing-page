@@ -1,15 +1,16 @@
 *{
     border: solid hsl(257, 40%, 49%) 0px;
-    max-width: 375px;
+    max-width: 100%;
     max-height: 812px;
 }
 
 body{
     background-color: hsl(257, 40%, 49%);
     background-image: url("images/bg-mobile.svg");
+    background-size: 100%;
     background-repeat: no-repeat;
     margin: auto;
-    max-width: 375px;
+    max-width: 100%;
 }
 
 .logo{
@@ -20,16 +21,18 @@ body{
 }
 
 .mockup{
-    transform: scale(0.8);
+    max-width: 80%;
+    left: 10.1%;
     position: relative;
-    top: 27px;
+    top: 7vh;
+
 }
 
 
 .main-text{
     text-align: center;
     position: relative;
-    bottom: -40px;
+    top: 5em;
 }
 
 .main-text h1{
@@ -56,47 +59,47 @@ body{
     border-radius: 25px;
     color: hsl(257, 40%, 49%);
     padding: 11px 80px;
+    margin-top: 3%;
     text-align: center;
     box-shadow: 0px 2px 11px 0px darkslateblue;
+    outline: none;
+}
+
+.main-text button:active{
+    background-color: hsl(300, 69%, 71%);
+    border: hsl(300, 69%, 71%);
+    color: white;
+    cursor: pointer;
 }
 
 .footer{
     display: grid;
     position: relative;
-    max-width: 35%;
-    top: 6em;
+    max-width: 45%;
+    top: 7em;
     grid-template-columns: 1fr 1fr 1fr;
     margin-left: auto;
     margin-right: auto;
     text-align:center;
 }
 
-.facebook{
-  /*transform: scale(0.035);*/
+.social{
   max-width: 20px;
   max-height: 20px;
   margin-left: auto;
   margin-right: auto;
+  border: solid 2px;
+  outline: none;
+  border-radius: 50%;
+  padding: 20%;
+  margin-bottom: 20px;
   filter: invert(100%) sepia(0%) saturate(1%) hue-rotate(100deg) brightness(107%) contrast(101%);
 }
 
-.twitter{
-  /*transform: scale(0.035);*/
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 20px;
-  max-height: 20px;
+.social:active {
+  filter: invert(79%) sepia(71%) saturate(3135%) hue-rotate(233deg) brightness(97%) contrast(88%);
   
-  filter: invert(100%) sepia(0%) saturate(1%) hue-rotate(100deg) brightness(107%) contrast(101%);
 }
 
-.instagram{
-  /*transform: scale(0.035);*/
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 20px;
-  max-height: 20px;
-  
-  filter: invert(100%) sepia(0%) saturate(1%) hue-rotate(100deg) brightness(107%) contrast(101%);
-  
-}
+
+
